@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-transparent bg-transppatent">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/Teal.png" class="site-logo" alt=""> Teal <span style="color: #60b1b6">Creativity</span> 
+        </a>
+        <button (click)="collapse($event)" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- <span class="span-1"></span>
+            <span class="span-2"></span>
+            <span class="span-3"></span> -->
+            <img src="../../../assets/Group 2601.png" style="width: 2rem;" alt="">
+        </button>
+        <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav me-auto m-auto mb-2 mb-lg-0">
+                <li [routerLinkActive]="['active']" class="nav-item me-4">
+                    <a class="nav-link " aria-current="page" [routerLink]="['Home']" href="#">Home</a>
+                </li>
+                <li [routerLinkActive]="['active']" class="nav-item me-4">
+                    <a class="nav-link" [routerLink]="['Services']" href="#">Services</a>
+                </li>
+                <!-- <li [routerLinkActive]="['active']" class="nav-item me-4">
+                    <a class="nav-link" [routerLink]="['Portfolio']" href="#">Portfolio</a>
+                </li>
+                <li [routerLinkActive]="['active']" class="nav-item me-4">
+                    <a class="nav-link" [routerLink]="['Teams']" href="#">Teams</a>
+                </li>
+                <li [routerLinkActive]="['active']" class="nav-item me-4">
+                    <a class="nav-link" [routerLink]="['Blog']" href="#">Blog</a>
+                </li> -->
+                <li [routerLinkActive]="['active']" class="nav-item ">
+                    <a class="nav-link" [routerLink]="['Contacts']" href="#">Contacts</a>
+                </li>
+                
+            </ul>
+            <form class="d-flex">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button> -->
+                <i class="fa fa-2x me-4 fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-2x me-4 fa-github" aria-hidden="true"></i>
+                <i class="fa fa-2x  fa-twitter" aria-hidden="true"></i>
+            </form>
+        </div>
+    </div>
+</nav>

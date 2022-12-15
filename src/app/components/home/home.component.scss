@@ -1,0 +1,47 @@
+.hero-image {
+    width: 100%;
+}
+
+.hero-heading {
+    font-size: 4rem;
+}
+
+.hero-sub-heading {
+    font-size: 1rem;
+    color: rgb(113, 113, 113);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-sub-heading {
+        font-size: 0.5rem;
+        color: rgb(113, 113, 113);
+        text-align: center;
+    }
+}
+
+#services{
+    padding: 8rem 0;
+}
+
+#contact{
+    padding: 0 0 4rem 0;
+}
+
+// .partners-odd{
+//     height: 8rem;
+//     background: white;
+//     text-align: center;
+//     align-content: center;
+// }
+// .partners-even{
+//     height: 8rem;
+//     background: #60b1b6;
+//     text-align: center;
+//     align-content: center;
+// }
