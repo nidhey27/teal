@@ -1,0 +1,61 @@
+.gallery {
+    --n: 3;
+    /* number of rows*/
+    --m: 8;
+    /* number of columns */
+    --h: 120px;
+    /* control the height */
+    --w: 150px;
+    /* control the width */
+    --g: 10px;
+    /* control the gap */
+    --f: 1.5;
+    /* control the scale factor */
+
+    display: grid;
+    gap: var(--g);
+    width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
+    height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g));
+    grid-template-columns: repeat(var(--m), auto);
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery {
+        --n: 3;
+        /* number of rows*/
+        --m: 3;
+        /* number of columns */
+        --h: 120px;
+        /* control the height */
+        --w: auto;
+        /* control the width */
+        --g: 10px;
+        /* control the gap */
+        --f: 1.5;
+        /* control the scale factor */
+    
+        display: grid;
+        gap: var(--g);
+        width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
+        height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g));
+        grid-template-columns: repeat(var(--m), auto);
+    }
+    
+}
+
+.gallery>img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    width: calc(var(--w)*var(--f));
+    height: calc(var(--h)*var(--f));
+}

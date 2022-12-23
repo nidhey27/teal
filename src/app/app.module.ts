@@ -8,13 +8,15 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProdutionReelsComponent } from './components/prodution-reels/prodution-reels.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ProdutionReelsComponent
   ],
   imports: [
     BrowserModule,
